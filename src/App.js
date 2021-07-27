@@ -4,6 +4,8 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Login from "./components/LoginComponent";
+import Signup from "./components/SignupComponent";
+
 
 
 function App() {
@@ -18,7 +20,7 @@ function App() {
                 <Link className="nav-link" to={"/sign-in"}>Login</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={"/sign-up"}>Add New Employee</Link>
+                <Link className="nav-link" to={"/sign-up"}> Signup</Link>
               </li>
             </ul>
           </div>
@@ -30,7 +32,7 @@ function App() {
           <Switch>
             <Route exact path='/' component={Login} />
             <Route path="/sign-in" component={Login} />
-            
+            <Route path="/sign-up" component={Signup} />
           </Switch>
         </div>
       </div>
