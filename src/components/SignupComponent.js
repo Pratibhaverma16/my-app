@@ -10,11 +10,13 @@ export default class Signup extends Component {
   render(){
 
     return (
-<Card style={{ width: '18rem' }}>
+<Card style={{ marginTop:'8vh'}}>
   
   <Card.Body>
     <Card.Title>Add New Employee</Card.Title>
     <Form>
+
+
   <Form.Group className="mb-3" controlId="formBasicEmail">
     <Container>
   <Row>
@@ -60,44 +62,80 @@ export default class Signup extends Component {
 
 
 
+  <Form.Group className="mb-3" controlId="formBasicEmail">
+    <Container>
+  <Row>
+    <Col><Form.Label>Internal No</Form.Label>
+    <Form.Control type="email" placeholder="enter internal no " /></Col>
+    <Col><Form.Label>Mobile No</Form.Label>
+    <Form.Control type="email" placeholder="enter mobile no" /></Col>
+    <Col><Form.Label>Permanent Address</Form.Label>
+    <Form.Control type="email" placeholder="enter address" /></Col>
+  </Row>
+</Container>
+  </Form.Group>
 
 
 
+  <Form.Group className="mb-3" controlId="formBasicEmail">
+    <Container>
+  <Row>
+    <Col><Form.Label>Cadre</Form.Label>
+    <Form.Control type="email" placeholder="-Select-" /></Col>
+    <Col><Form.Label>Place of Posting</Form.Label>
+    <Form.Control type="email" placeholder="SSPL" /></Col>
+    <Col><Form.Label>Present Address</Form.Label>
+    <Form.Control type="email" placeholder="enter address" /></Col>
+  </Row>
+</Container>
+  </Form.Group>
 
 
 
+  <Form.Group className="mb-3" controlId="formBasicEmail">
+    <Container>
+  <Row>
+    <Col><Form.Label>Internet Mail-ID</Form.Label>
+    <Form.Control type="email" placeholder="enter internet mail" /></Col>
+    <Col><Form.Label>SSPL Mail-ID</Form.Label>
+    <Form.Control type="email" placeholder="enter SSPL mail" /></Col>
+    <Col><Form.Label>Group/Division</Form.Label>
+    <Form.Control type="email" placeholder="-Select" /></Col>
+  </Row>
+</Container>
+  </Form.Group>
 
 
+
+  <Form.Group className="mb-3" controlId="formBasicEmail">
+    <Container>
+  <Row>
+    <Col><Form.Label>Group Officer</Form.Label>
+    <Form.Control type="email" placeholder="-Select-" /></Col>
+    <Col><Form.Label>Division Officer</Form.Label>
+    <Form.Control type="email" placeholder="-Select-" /></Col>
+    <Col><Form.Label>Technical Director</Form.Label>
+    <Form.Control type="email" placeholder="-Select-" /></Col>
+  </Row>
+</Container>
+  </Form.Group>
 
 
 
 
   <Form.Group className="mb-3" controlId="formBasicEmail">
-    <Form.Label>Internal no</Form.Label>
-    <Form.Control type="email" placeholder="enter internal no" />
-    
+    <Container>
+  <Row>
+    <Col><Form.Label>Images</Form.Label>
+    <Form.Control type="email" placeholder="no file chosen" /><button>Choose File</button></Col>
+    <Col><Form.Label>Enter ICNO</Form.Label>
+    <Form.Control type="email" placeholder="Enter" /></Col>
+    <Col><Form.Label>Remarks</Form.Label>
+    <Form.Control type="email" placeholder="enter remarks" /></Col>
+  </Row>
+</Container>
   </Form.Group>
 
-  <Form.Group className="mb-3" controlId="formBasicEmail">
-    <Form.Label>Internet Mail-Id</Form.Label>
-    <Form.Control type="email" placeholder="enter internet mail" />
-    
-  </Form.Group>
-  
-
-
-  <Form.Group className="mb-3" controlId="formBasicEmail">
-    <Form.Label>SSPL mail ID</Form.Label>
-    <Form.Control type="email" placeholder="enter" />
-    
-  </Form.Group>
-
-
-
-  <Form.Group className="mb-3" controlId="formBasicPassword">
-    <Form.Label>Password</Form.Label>
-    <Form.Control type="password" placeholder="Password" />
-  </Form.Group>
   <Form.Group className="mb-3" controlId="formBasicCheckbox">
     
   </Form.Group>
