@@ -11,7 +11,8 @@ export default class Group extends Component {
                     <input type="email" className="form-control" placeholder="Enter" />
                 </div>
 
-               
+                
+
                 <div className="form-group">
                     <div className="custom-control custom-checkbox">
                         <input type="checkbox" className="custom-control-input" id="customCheck1" />
