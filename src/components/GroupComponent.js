@@ -11,7 +11,31 @@ export default class Group extends Component {
                     <input type="email" className="form-control" placeholder="Enter" />
                 </div>
 
-                
+
+                <div className="form-group">
+                    <label>Group Head</label>
+                    <input type="email" className="form-control" placeholder="-Select-" />
+                </div>
+
+                <div className="form-group">
+                    <label>Division Head</label>
+                    <input type="email" className="form-control" placeholder="-Select-" />
+                </div>
+
+
+                <div className="form-group">
+                    <label>To</label>
+                    <input type="email" className="form-control" placeholder="-Select-" />
+                </div>
+
+
+                <div className="form-group">
+                    <label>O.C</label>
+                    <input type="email" className="form-control" placeholder="-Select-" />
+                </div>
+
+
+
 
                 <div className="form-group">
                     <div className="custom-control custom-checkbox">
