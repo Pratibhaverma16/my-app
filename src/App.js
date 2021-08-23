@@ -3,6 +3,12 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
+import { useState } from "react";
+
+
+
+
+
 import Login from "./components/LoginComponent";
 import Signup from "./components/SignupComponent";
 import Designation from "./components/DesignationComponent";
@@ -10,6 +16,17 @@ import Group from "./components/GroupComponent";
 
 
 function App() {
+
+
+const[DesignationName,setDesignationName]= useState("");
+
+const displayInfo = () =>{
+
+  console.log(DesignationName)
+}
+
+
+
   return (<Router>
     <div className="App">
       <nav className="navbar navbar-expand-lg navbar-light fixed-top">
@@ -27,6 +44,16 @@ function App() {
               <li className="nav-item">
                 <Link className="nav-link" to={"/designation"}> Designation</Link>
               </li>
+
+
+               <input
+               type="text"
+               onChange={(event) => {
+
+                setDesignationName(event.target.value);
+               } }
+
+               />
               <li className="nav-item">
                 <Link className="nav-link" to={"/group"}> Group</Link>
               </li>
