@@ -16,16 +16,25 @@ import Axios from 'axios';
         console.log(designation)
       }
 
+      const [message,setMessage]=useState("");
+
 
 
   const add = () =>{
- Axios.post('http://localhost:3001/designation',{
+ Axios.post('https://pratibha-server.herokuapp.com/create',{
      designation:designation
 
- }).then(() =>{
-
+ }).then((res) =>{
+    setMessage(res.data.message);
     console.log("success");
-  });
+  }).catch(err =>{
+      if(err.response && err.response.data){
+          setMessage(err.response.data.message)
+      }
+      else{
+          setMessage(err.message);
+      }
+  })
 };
 
 
@@ -43,17 +52,10 @@ import Axios from 'axios';
 
                 
 
-                <div className="form-group">
-                    <div className="custom-control custom-checkbox">
-                        <input type="checkbox" className="custom-control-input" id="customCheck1" />
-                        <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
-                    </div>
-                </div>
+                
 
                 <button type="submit"   onClick={add}     className="btn btn-primary btn-block">Add</button>
-                <p className="forgot-password text-right">
-                    Forgot <a href="#">password?</a>
-                </p>
+               <p>{ message }</p>
             </form>
         );
     }
